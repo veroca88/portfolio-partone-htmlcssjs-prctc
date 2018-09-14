@@ -2,6 +2,7 @@ body {
   margin: 0px;
   text-align: center;
   font-family: 'Play', sans-serif;
+  font-size: 1em;
 }
 
 #welcome-section {
@@ -28,25 +29,27 @@ button {
 }
 
 #projects {
+  font-size: 1.3em;
  background-color: rgb(219, 91, 119);
  color: midnightblue; 
  display: inline-block;
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
   border-bottom: 2px;
   border-color: aqua;
+  margin-bottom: 0px;
 }
 
 .project-title {
   width: 150px;
 }
 #illustration {
+  font-size: 1.3em;
   background-color: rgb(100, 226, 243);
   color: midnightblue; 
   display: inline-block;
    width: 100vw;
-   height: 45vh;
-   border-bottom: 2px;
+   height: 50vh;
  }
  
 h1 {
@@ -60,8 +63,9 @@ a {
 #welcome-button {
   border-radius: 12px;
   background-color: rgb(255, 214, 111);
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: rgb(156, 6, 131);
+  padding: 10px 15px 10px 15px;
 }
 
 .img-illustration {
@@ -71,6 +75,66 @@ a {
 }
 
 #navbar {
-
-  
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  width: 15%;
+  position: fixed;
+  height: 25%;
+  overflow: auto;  
 }
+
+ul li a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: rgb(255, 214, 111);
+  color: indigo;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: rgb(100, 226, 243);
+}
+
+.content {
+  padding: 1px 16px;
+  height: 25%;
+}
+
+@media screen and (max-width: 900px) {
+  ul #navbar {
+    height: 65em;
+    width: 100%;
+    position: relative;
+  }
+  li a {
+    float: left;
+    padding: 15px;
+  }
+  div.content {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+#footer {
+  background-image: url(/assets/images/pixel.jpg);
+  padding-top: 20px;
+  width: 100%;
+  color: indigo;
+  margin-bottom: 0%;
+  display: inline-block;
+}
+
+
+
